@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class LinkService implements LinkUseCase {
 
-    LinkRepository repository;
+    private final LinkRepository repository;
 
     @Override
     public List<Link> findaAll() {

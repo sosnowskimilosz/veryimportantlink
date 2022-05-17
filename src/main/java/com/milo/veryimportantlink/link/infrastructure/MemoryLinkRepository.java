@@ -10,8 +10,8 @@ import java.util.concurrent.atomic.AtomicLong;
 @Repository
 public class MemoryLinkRepository implements LinkRepository {
 
-    Map<Long, Link> storage = new HashMap<>();
-    AtomicLong ID_VALUE = new AtomicLong(0);
+    private final Map<Long, Link> storage = new HashMap<>();
+    private final AtomicLong ID_VALUE = new AtomicLong(0);
 
     @Override
     public List<Link> findAll() {

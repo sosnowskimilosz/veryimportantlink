@@ -43,13 +43,13 @@ public interface LinkUseCase {
         List<String> tags;
 
         public Link updateFields(Link link){
-            if(link.getDescription() != null){
+            if(description != null){
                 link.setDescription(description);
             }
-            if(link.getAddress() != null){
+            if(address != null){
                 link.setAddress(address);
             }
-            if(link.getTags() != null){
+            if(tags != null){
                 link.setTags(tags);
             }
             return link;
